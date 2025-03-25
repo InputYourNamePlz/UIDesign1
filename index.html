@@ -6,22 +6,91 @@
   <meta charset="utf-8" />
   <!-- CSS 파일 연결 -->
   <link rel="stylesheet" href="assets/style.css" />
+  <!-- Font Awesome 아이콘 CSS는 더 이상 필요하지 않습니다 -->
 </head>
 
 <body>
-  <!-- this is where my code is-->
-  <div id="grid">
-    <div id="left-column" class="scroll">  
+  <!-- Stars background -->
+  <script>
+    // Create stars when the page loads
+    window.onload = function() {
+      for (let i = 0; i < 50; i++) {
+        createStar();
+      }
+      
+      // 스크롤 이벤트 리스너 추가
+      window.addEventListener('scroll', handleScroll);
+    }
+    
+    function createStar() {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      
+      // Random size between 1-4px
+      const size = Math.random() * 3 + 1;
+      star.style.width = size + 'px';
+      star.style.height = size + 'px';
+      
+      // Random position
+      star.style.left = Math.random() * 100 + 'vw';
+      star.style.top = Math.random() * 100 + 'vh';
+      
+      // Random animation delay
+      star.style.animationDelay = Math.random() * 3 + 's';
+      
+      document.body.appendChild(star);
+    }
+    
+    // 스크롤 처리 함수
+    function handleScroll() {
+      const scrollIndicator = document.getElementById('scroll-indicator');
+      
+      // 스크롤 위치가 일정 값 이상이면 화살표 숨기기
+      if (window.scrollY > 50) {
+        scrollIndicator.classList.add('hide-indicator');
+      } else {
+        scrollIndicator.classList.remove('hide-indicator');
+      }
+    }
+  </script>
 
-      <!-- my favorite pokemon -->
-      <!-- <img src="https://archives.bulbagarden.net/media/upload/2/24/Spr_2c_054.png" alt="Psyduck" /> -->
+  <!-- Main content -->
+  <div id="container">
+    <div id="content-area">
+      <!-- Rocket GIF로 교체 -->
+      <div id="rocket-container">
+        <img src="assets/rocket.gif" alt="Rocket" id="rocket-image">
+      </div>
 
       <!-- about me-->
-      <h1>Sungjin Jeon</h1>  
-      <p class="desc">or you can call me Samuel---Sam! :D</p>
+      <h1>Sungjin Jeon</h1>
+      <p class="desc">or you can call me Samuel — Sam! :D</p>
+      
+      
+      </br>
+      </br>
+      </br>
+  
       <ul>
-        <li>My favorite website is <a href="https://claude.ai">Claude.ai</a></li>
+        I like CS, especially AI and GPUs
       </ul>
+      <ul>
+        My favorite website is <a href="https://claude.ai">Claude.ai</a>
+      </ul>
+      
+      </br>
+      </br>
+      
+      <!-- 스크롤 화살표 추가 -->
+      <div id="scroll-indicator">
+        <div class="arrow-down">&#9660;</div> <!-- 오른쪽 화살표(&#10095;)에서 아래쪽 화살표(&#9660;)로 변경 -->
+      </div>
+      
+      </br>
+      </br>
+      </br>
+      </br>
+
       <h3>Exercises</h3>
       <ul>
         <li><a href="ascii/exterior.html">ASCII Town</a></li>
