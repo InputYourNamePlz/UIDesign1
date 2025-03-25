@@ -33,7 +33,7 @@ body {
 /* Content area styling */
 #content-area {
     text-align: center;
-    padding: 130px;
+    padding: 100px;
     position: relative;
     z-index: 1;
 }
