@@ -1,60 +1,69 @@
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
 * {
-	margin:  0px;
-	padding:  0px;
-	box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 /* adjusting fonts */
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
-	transition: background 500ms ease;
+    font-family: 'SUITE-Regular', -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
+    transition: background 500ms ease;
 }
 
 p, li {
-	font-size:  22px;
-	line-height: 30px;
+    font-size: 22px;
+    line-height: 30px;
 }
 
 /* adjusting spacing */
 
 #left-column {
-	padding: 20px;
+    padding: 20px;
+    text-align: center; /* 텍스트 중앙 정렬 추가 */
 }
 
 h1, p {
-	margin-bottom:  20px;
+    margin-bottom: 20px;
 }
 
 ul, ol {
-	margin-left: 20px;
+    margin-left: 0; /* 기본 왼쪽 여백 제거 */
+    list-style-position: inside; /* 리스트 마커도 중앙에 맞추기 */
 }
 
 img {
-	max-width: 100%;
-	height:  auto;
+    max-width: 100%;
+    height: auto;
 }
 
 /* uncomment the code below to set the grid */
 
 /*#grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 body {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 .scroll {
-	padding:  20px;
-	overflow: scroll;
-	height: 100vh;
+    padding: 20px;
+    overflow: scroll;
+    height: 100vh;
 }
 
 #left-column {
 }
 
 #right-column {
-	background: #333;
+    background: #333;
 }*/
