@@ -1,0 +1,177 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f0f0f0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+  }
+
+  #align {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+  #stage {
+	position: relative;
+	width: 950px;
+	height: 850px;
+	background-color: white;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .path {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  }
+
+  /* Path 1 - Salmon/peach color */
+  #path1 {
+	background-color: #fadbce;
+	clip-path: polygon(
+	  493px 749px, 493px 786px, 531px 818px, 549px 818px, 606px 770px, 
+	  617px 719px, 639px 661px, 649px 617px, 700px 531px, 772px 536px, 
+	  800px 506px, 800px 487px, 841px 487px, 867px 482px, 882px 461px, 
+	  882px 439px, 865px 414px, 827px 414px, 815px 382px, 814px 367px, 
+	  742px 362px, 724px 357px, 660px 218px, 593px 197px, 581px 208px, 
+	  586px 250px, 622px 294px, 625px 357px, 603px 492px, 568px 592px, 
+	  528px 636px, 510px 689px
+	);
+  }
+
+  /* Path 2 - Yellow */
+  #path2 {
+	background-color: #fed378;
+	clip-path: polygon(
+	  606px 770px, 669px 759px, 724px 786px, 806px 806px, 788px 743px, 
+	  776px 690px, 706px 717px, 678px 610px, 673px 558px, 690px 461px, 
+	  718px 363px, 820px 368px, 871px 323px, 801px 257px, 713px 173px, 
+	  628px 173px, 557px 216px, 505px 300px, 485px 414px, 502px 478px, 
+	  514px 646px, 575px 603px, 614px 639px, 639px 661px, 617px 719px
+	);
+  }
+
+  /* Path 3 - Red */
+  #path3 {
+	background-color: #e92e0e;
+	clip-path: polygon(
+	  174px 343px, 174px 712px, 315px 704px, 322px 354px, 310px 322px, 
+	  179px 322px, 174px 343px
+	);
+  }
+
+  /* Path 4 - Orange */
+  #path4 {
+	background-color: #d55f24;
+	clip-path: polygon(
+	  124px 749px, 314px 749px, 318px 537px, 275px 507px, 215px 494px, 
+	  196px 494px, 124px 507px, 73px 571px, 64px 656px, 82px 706px, 
+	  124px 749px
+	);
+  }
+
+  /* Path 5 - White */
+  #path5 {
+	background-color: #ffffff;
+	clip-path: polygon(
+	  706px 722px, 773px 695px, 777px 730px, 784px 765px, 806px 806px, 
+	  844px 798px, 891px 792px, 922px 766px, 936px 706px, 936px 671px, 
+	  923px 647px, 898px 640px, 853px 640px, 824px 645px, 818px 604px, 
+	  811px 563px, 772px 536px, 713px 532px, 713px 502px, 694px 461px, 
+	  562px 455px, 527px 455px, 541px 502px, 575px 518px, 626px 530px, 
+	  677px 540px, 674px 551px, 670px 570px, 678px 610px, 692px 683px, 
+	  706px 722px
+	);
+  }
+
+  /* Path 6 - Blue */
+  #path6 {
+	background-color: #014097;
+	clip-path: polygon(
+	  311px 760px, 390px 771px, 487px 771px, 510px 689px, 527px 663px, 
+	  531px 489px, 509px 455px, 500px 419px, 500px 344px, 505px 300px, 
+	  520px 279px, 472px 279px, 333px 268px, 328px 356px, 311px 738px
+	);
+  }
+
+  /* Path 7 - Light color */
+  #path7 {
+	background-color: #f2e7e9;
+	clip-path: polygon(
+	  170px 334px, 267px 322px, 310px 322px, 322px 354px, 314px 749px, 
+	  344px 749px, 357px 734px, 357px 714px, 348px 703px, 326px 701px, 
+	  325px 686px, 321px 680px, 357px 692px, 357px 664px, 336px 659px, 
+	  330px 652px, 326px 638px, 342px 651px, 357px 646px, 357px 633px, 
+	  346px 626px, 328px 619px, 328px 608px, 337px 598px, 357px 593px, 
+	  357px 578px, 348px 569px, 341px 551px, 329px 535px, 324px 524px, 
+	  330px 518px, 342px 526px, 364px 527px, 355px 514px, 343px 507px, 
+	  328px 494px, 328px 477px, 341px 500px, 357px 507px, 356px 471px, 
+	  336px 455px, 331px 438px, 347px 455px, 364px 445px, 358px 421px, 
+	  355px 397px, 348px 399px, 346px 411px, 342px 396px, 328px 383px, 
+	  328px 375px, 345px 372px, 357px 389px, 357px 328px, 345px 328px, 
+	  340px 322px, 334px 322px, 330px 311px, 328px 294px, 327px 276px, 
+	  401px 276px, 484px 271px, 527px 271px, 527px 255px, 472px 248px, 
+	  337px 248px, 317px 262px, 257px 271px, 170px 290px, 149px 299px, 
+	  149px 318px
+	);
+  }
+
+  /* Path 8 - Light blue */
+  #path8 {
+	background-color: #94bafe;
+	clip-path: polygon(
+	  371px 303px, 371px 337px, 397px 347px, 371px 358px, 366px 416px, 
+	  390px 416px, 407px 403px, 386px 429px, 366px 429px, 366px 478px, 
+	  379px 489px, 386px 472px, 407px 489px, 366px 489px, 366px 515px, 
+	  371px 535px, 391px 541px, 366px 552px, 366px 696px, 376px 707px, 
+	  366px 717px, 366px 755px, 401px 764px, 407px 646px, 417px 650px, 
+	  417px 759px, 471px 764px, 471px 749px, 453px 749px, 441px 736px, 
+	  435px 642px, 461px 632px, 462px 616px, 433px 609px, 434px 601px, 
+	  493px 606px, 483px 571px, 434px 563px, 483px 561px, 487px 517px, 
+	  476px 489px, 466px 435px, 469px 387px, 478px 375px, 493px 298px, 
+	  429px 298px, 429px 511px, 413px 489px, 413px 303px, 377px 304px
+	);
+  }
+
+  /* Path 9 - Brown */
+  #path9 {
+	background-color: #5a1e0c;
+	clip-path: polygon(
+	  179px 401px, 207px 379px, 247px 401px, 232px 455px, 294px 467px, 
+	  276px 489px, 230px 475px, 221px 494px, 196px 494px, 201px 468px, 
+	  174px 473px, 174px 455px, 198px 449px, 210px 423px, 184px 417px
+	);
+  }
+
+  /* Path 10 - Brown */
+  #path10 {
+	background-color: #5a1e0c;
+	clip-path: polygon(
+	  758px 500px, 811px 519px, 841px 487px, 772px 471px, 758px 500px
+	);
+  }
+
+  /* Path 11 - Blue */
+  #path11 {
+	background-color: #014097;
+	clip-path: polygon(
+	  790px 425px, 799px 414px, 804px 379px, 785px 379px, 780px 413px, 
+	  790px 425px
+	);
+  }
+
+  /* Path 12 - Salmon/peach */
+  #path12 {
+	background-color: #fadbce;
+	clip-path: polygon(
+	  654px 230px, 619px 230px, 645px 298px, 669px 237px, 669px 209px, 
+	  602px 192px, 580px 197px, 601px 240px, 609px 309px, 635px 298px, 
+	  600px 209px, 658px 225px
+	);
+  }
