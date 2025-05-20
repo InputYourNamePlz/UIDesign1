@@ -71,8 +71,9 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: #99ffff;
+    /* font-size: x-large; */
 }
 
 /* Rocket image styling */
