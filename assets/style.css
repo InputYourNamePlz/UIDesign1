@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'EF_cucumbersalad';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_cucumbersalad.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -42,6 +49,11 @@ body {
 h1 {
     font-size: 60px;
     margin-bottom: 10px;
+    transition: font-family 0.3s ease; /* 부드러운 폰트 변경 */
+}
+h1.second-font {
+    font-family: 'EF_cucumbersalad', serif;
+    font-size: 51px;
 }
 
 h3 {
@@ -84,6 +96,12 @@ a:hover {
 #rocket-image {
     max-width: 100px; /* 이미지 크기 조절 */
     height: auto;
+    cursor: pointer; /* 클릭 가능함을 표시 */
+    transition: transform 0.2s ease;
+}
+
+#rocket-image:hover {
+    transform: rotate(45deg) scaleX(-1) scale(1.1);
 }
 
 /* Add stars to background */

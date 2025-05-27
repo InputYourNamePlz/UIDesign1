@@ -10,6 +10,14 @@
 <body>
   <script>
     window.onload = function() {
+
+      const rocketImage = document.getElementById('rocket-image');
+      const nameTitle = document.querySelector('h1');
+
+      rocketImage.addEventListener('click', function() {
+          nameTitle.classList.toggle('second-font');
+      });
+
       for (let i = 0; i < 50; i++) {
         createStar();
       }
